@@ -1,0 +1,16 @@
+.paper-header{margin-top: 10px;border-bottom: 1px solid #EEEEEE;}
+.paper-header h2{font-family: inherit;font-weight: 500;line-height: 1.1;}
+.paper-content{margin-top: 30px;min-height: 400px;}
+.table thead{font-size: 16px;}
+.form-control{width: 25%;}
+.form-group label{font-size: 16px;}
+.btn-block{width: 10%;}
+.tip-message{margin-top: 20px;}
+.bg-success, .bg-danger{border-radius: 4px;}
+.tip-message p{font-size: 18px;padding: 10px;}
+a.text-danger{cursor: pointer;}
+.del-info, .edit-info{display: inline-block;padding: 3px 15px;border-radius: 0;}
+.del-info:hover{text-decoration: none;}
+.add-user{margin-top: 70px; width: 100px;display: block;}
+.pagination{display: block;width: 230px;margin: 20px auto;}
+.table-box{min-height: 460px;}

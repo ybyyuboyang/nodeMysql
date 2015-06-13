@@ -1,0 +1,53 @@
+<% include ../../include/header.ejs %>
+
+<div class="row tip-message">
+	<% if (data.message == 'success') { %>
+		<div class="bg-success">
+			<p class="text-success">用户信息修改成功</p>
+		</div>
+	<% } %>
+	<% if (data.message == 'error') { %>
+		<div class="bg-danger">
+			<p class="text-danger">用户信息修改失败</p>
+		</div>
+	<% } %>
+</div>
+<div class="row paper-header">
+	<h2>修改用户信息</h2>
+</div>
+<div class="row paper-content">
+	<form action="/user/useredit" role="form" method='post'>
+		<div class="form-group">
+			<label for="name">用户名</label>
+			<input type="text" name='name' id='name' class="form-control"
+			 value='<%= data.name%>' placeholder='请输入用户名'> 
+		</div>
+		<div class="form-group">
+			<label for="age">年龄</label>
+			<input type="text" name='age' id='age' class="form-control" 
+			 value='<%= data.age%>' placeholder='请输入用户年龄'>
+		</div>
+		<div class="form-group">
+			<label for="sex">性别</label>
+			<input type="text" name='sex' id='sex' class="form-control"
+			 value='<%= data.sex%>' placeholder='请输入用户年龄'>
+		</div>
+		<div class="form-group">
+			<label for="phone">电话</label>
+			<input type="text" name='phone' id='phone' class="form-control" 
+			 value='<%= data.phone%>' placeholder='请输入用户电话'>
+		</div>
+		<div class="form-group">
+			<label for="job">工作</label>
+			<input type="text" name='job' id='job' class="form-control"
+			 value='<%= data.job%>' placeholder='请输入用户工作'>
+		</div>
+		<input type="hidden" name='id' value='<%= data.id%>'>
+		<button type="submit" class="btn btn-primary add-user">确定修改</button>
+		<a href="/user/userlist" class="btn btn-default add-user">返回列表页</a>
+	</form>
+</div>
+
+<% include ../../include/footer.ejs %>
+
+

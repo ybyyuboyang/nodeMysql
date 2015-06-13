@@ -1,0 +1,10 @@
+<ul class="pagination">
+	<li><a href="/user/userlist?startIndex=1">&laquo;</a></li>
+	<% pageCount.forEach(function(item){%>
+
+		<li class="<% if(curPage == item){%>active<%}%>">
+			<a href="/user/userlist?startIndex=<%= item%>"><%= item%></a>
+		</li>
+	<%})%>
+	<li><a href="/user/userlist?startIndex=<%= pageCount.length%>">&raquo;</a></li>
+</ul>
